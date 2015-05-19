@@ -11,6 +11,7 @@ function $(selector){
 /**
  * [alpha description]
  * @param  {[element]} target [目标元素]
+ * @param  {[Text]} text [显示文本]
  * @param  {[boolean]} fade   [渐显/渐隐:true/false]
  * @param  {[Number]} times   [需要的时间(ms)]
  * @return {[type]}        []
