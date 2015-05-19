@@ -39,6 +39,8 @@ function alpha(target,fade,times,callback){
 
 window.onload = function(){
 	alpha($('.text'),true,2,function(){
-		alpha($('.text'),false,2);
+		setTimeout(function(){
+			alpha($('.text'),false,2);
+		},2000);
 	});
 }
