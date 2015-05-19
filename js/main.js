@@ -15,39 +15,30 @@ function $(selector){
  * @param  {[Number]} times   [需要的时间]
  * @return {[type]}        []
  */
-function alpha(target,fade,times){
+function alpha(target,fade,times,callback){
 	var ie 	= (window.ActiveXObject) ? true : false,
 		n 	= fade ? 0 : 1;
 	var time = setInterval(function(){
-		
 		if(fade){
 			n += 0.01;
 			ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
 			if(n >= 1){
 				clearInterval(time);
+				callback && callback();
 			}
 		}else {
 			n -= 0.01;
 			ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
 			if(n <= 0) {
 				clearInterval(time);
+				callback && callback();
 			}
 		}
 	},times*1000/100);
 }	
 
 window.onload = function(){
-	alpha($('.text'),true,2);
-}
-
-/**
- * 开始Timer，并返回Timer对象
- * @param  {Function} fn    [description]
- * @param  {[int]}   times [description]
- * @return {[intervel]}         [description]
- */
-function startTimer(fn,times){
-	return setInterval(function(){
-		fn;
-	},times);
+	alpha($('.text'),true,2,function(){
+		alpha($('.text'),false,2);
+	});
 }
