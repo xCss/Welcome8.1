@@ -40,6 +40,14 @@ window.onload = function(){
 	alpha($('.text'),true,2);
 }
 
+/**
+ * 开始Timer，并返回Timer对象
+ * @param  {Function} fn    [description]
+ * @param  {[int]}   times [description]
+ * @return {[intervel]}         [description]
+ */
 function startTimer(fn,times){
-	setInterval(function(){},times);
+	return setInterval(function(){
+		fn;
+	},times);
 }
