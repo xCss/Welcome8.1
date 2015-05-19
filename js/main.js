@@ -22,21 +22,13 @@ function alpha(target,fade,times){
 		
 		if(fade){
 			n += 0.01;
-			if(ie){
-				target.style.filter='Alpha(opacity:'+ n*100 +')';
-			}else{
-				 target.style.opacity = n;
-			}
+			ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
 			if(n >= 1){
 				clearInterval(time);
 			}
 		}else {
 			n -= 0.01;
-			if(ie){
-				target.style.filter='Alpha(opacity:'+ n*100 +')';
-			}else{
-				 target.style.opacity = n;
-			}
+			ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
 			if(n <= 0) {
 				clearInterval(time);
 			}
@@ -45,5 +37,9 @@ function alpha(target,fade,times){
 }	
 
 window.onload = function(){
-	alpha($('.text'),true,1.5);
+	alpha($('.text'),true,2);
+}
+
+function startTimer(fn,times){
+	setInterval(function(){},times);
 }
