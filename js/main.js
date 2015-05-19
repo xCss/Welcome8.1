@@ -34,13 +34,13 @@ function alpha(target,fade,times,callback){
 				callback && callback();
 			}
 		}
-	},times*1000/100);
+	},times/100);
 }	
 
 window.onload = function(){
-	alpha($('.text'),true,2,function(){
+	alpha($('.text'),true,2000,function(){
 		setTimeout(function(){
-			alpha($('.text'),false,2);
+			alpha($('.text'),false,2000);
 		},2000);
 	});
 }
