@@ -39,11 +39,12 @@ function alpha(target,text,fade,times,callback){
 }	
 
 window.onload = function(){
-	var i = 0;
-	alpha($('.text'),TIPS[i],true,2000,function(){
+	var i = 0,
+		text = $('.text');
+	alpha(text,TIPS[i],true,2000,function(){
 		setTimeout(function(){
-			alpha($('.text'),TIPS[i],false,2000,function(){
-				alpha($('.text'),TIPS[++i],true,2000);
+			alpha(text,TIPS[i],false,2000,function(){
+				alpha(text,TIPS[++i],true,2000);
 			});
 		},1000);
 	});
