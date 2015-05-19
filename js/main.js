@@ -11,13 +11,14 @@ function $(selector){
 /**
  * [alpha description]
  * @param  {[element]} target [目标元素]
- * @param  {[boolean]} fade   [渐显or渐隐:true or false]
- * @param  {[Number]} times   [需要的时间]
+ * @param  {[boolean]} fade   [渐显/渐隐:true/false]
+ * @param  {[Number]} times   [需要的时间(ms)]
  * @return {[type]}        []
  */
-function alpha(target,fade,times,callback){
+function alpha(target,text,fade,times,callback){
 	var ie 	= (window.ActiveXObject) ? true : false,
 		n 	= fade ? 0 : 1;
+	target.innerHTML = text;
 	var time = setInterval(function(){
 		if(fade){
 			n += 0.01;
@@ -38,9 +39,12 @@ function alpha(target,fade,times,callback){
 }	
 
 window.onload = function(){
-	alpha($('.text'),true,2000,function(){
+	var i = 0;
+	alpha($('.text'),TIPS[i],true,2000,function(){
 		setTimeout(function(){
-			alpha($('.text'),false,2000);
-		},2000);
+			alpha($('.text'),TIPS[i],false,2000,function(){
+				alpha($('.text'),TIPS[++i],true,2000);
+			});
+		},1500);
 	});
 }
