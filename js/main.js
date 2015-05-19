@@ -45,6 +45,6 @@ window.onload = function(){
 			alpha($('.text'),TIPS[i],false,2000,function(){
 				alpha($('.text'),TIPS[++i],true,2000);
 			});
-		},1500);
+		},1000);
 	});
 }
