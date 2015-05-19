@@ -1,0 +1,9 @@
+@charset "utf-8";
+/**
+ * 
+ */
+*{margin:0 auto;padding:0;text-align: center;}
+html,body{height:100%;width:100%;}
+.main{height:100%;width:100%;background:#000;display:table;}
+.text{opacity:0;color:#fff;font-family: "微软雅黑";font-size: 60px;display:table-cell;vertical-align: middle;}
+.layout{position:fixed;height:100%;width:100%;top:0;}
