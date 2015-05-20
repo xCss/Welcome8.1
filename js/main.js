@@ -49,4 +49,37 @@ window.onload = function(){
             });
         },1000);
     });
+
+    var rgb = [0,0,0];
+    setInterval(function(){
+        rgb = color(rgb);
+        $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
+    },15);
 }
+
+/**
+ * 颜色平滑过渡算法
+ * @param  {[Array]} rgb [颜色数组]
+ * @return {[Array]}     [颜色数组]
+ */
+function color(rgb){
+    var r = rgb[0],
+        g = rgb[1],
+        b = rgb[2];
+    if(r < 255 && g == 0 && b == 0 ){
+        rgb[0] = ++r;
+    }else if(r == 255 && g < 200 && b == 0){
+        rgb[1] = ++g;
+    }else if(r > 0 && g == 200 && b == 0){
+        rgb[0] = --r;
+    }else if(r == 0 && g == 200 && b < 255){
+        rgb[2] = ++b;
+    }else if(r == 0 && g > 0 && b == 255){
+        rgb[1] = --g;
+    }else if(r < 255 && g == 0 && b == 255){
+        rgb[0] = ++r;
+    }else if(r == 255 && g == 0 && b > 0){
+        rgb[2] = --b;
+    }
+    return rgb;
+};
