@@ -41,7 +41,7 @@ function alpha(target,text,fade,times,callback){
 
 window.onload = function(){
     var i = 0,
-        text = $('.text')，
+        text = $('.text'),
         rgb = [0,0,0];
     alpha(text,TIPS[i],true,2000,function(){
         setTimeout(function(){
