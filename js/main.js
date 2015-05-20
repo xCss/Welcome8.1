@@ -54,7 +54,7 @@ window.onload = function(){
     setInterval(function(){
         rgb = color(rgb);
         $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
-    },15);
+    },20);
 }
 
 /**
