@@ -48,13 +48,14 @@ window.onload = function(){
             alpha(text,TIPS[i],false,2000,function(){
                 alpha(text,TIPS[++i],true,2000);
             });
+            setInterval(function(){
+                rgb = color(rgb);
+                $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
+            },20);
         },1000);
     });
 
-    setInterval(function(){
-        rgb = color(rgb);
-        $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
-    },20);
+    
 }
 
 /**
