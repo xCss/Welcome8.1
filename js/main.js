@@ -6,7 +6,7 @@ var TIPS = ['你好','我们正在为你进行相关设置',['正在获取关键
  * @return {[element]}          [description]
  */
 function $(selector){
-	return document.querySelector(selector);
+    return document.querySelector(selector);
 }
 /**
  * [alpha description]
@@ -17,31 +17,32 @@ function $(selector){
  * @return {[type]}        []
  */
 function alpha(target,text,fade,times,callback){
-	var ie 	= (window.ActiveXObject) ? true : false,
-		n 	= fade ? 0 : 1;
-	target.innerHTML = text;
-	var time = setInterval(function(){
-		if(fade){
-			n += 0.01;
-			ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
-			if(n >= 1){
-				clearInterval(time);
-				callback && callback();
-			}
-		}else {
-			n -= 0.01;
-			ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
-			if(n <= 0) {
-				clearInterval(time);
-				callback && callback();
-			}
-		}
-	},times/100);
-}	
+    var ie = (window.ActiveXObject) ? true : false,
+        n  = fade ? 0 : 1;
+    target.innerHTML = text;
+    var time = setInterval(function(){
+        if(fade){
+            n += 0.01;
+            ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
+            if(n >= 1){
+                clearInterval(time);
+                callback && callback();
+            }
+        }else {
+            n -= 0.01;
+            ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
+            if(n <= 0) {
+                clearInterval(time);
+                callback && callback();
+            }
+        }
+    },times/100);
+}    
 
 window.onload = function(){
     var i = 0,
-        text = $('.text');
+        text = $('.text')，
+        rgb = [0,0,0];
     alpha(text,TIPS[i],true,2000,function(){
         setTimeout(function(){
             alpha(text,TIPS[i],false,2000,function(){
@@ -50,7 +51,6 @@ window.onload = function(){
         },1000);
     });
 
-    var rgb = [0,0,0];
     setInterval(function(){
         rgb = color(rgb);
         $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
