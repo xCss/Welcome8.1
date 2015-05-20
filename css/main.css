@@ -7,7 +7,7 @@
 *{margin:0 auto;padding:0;text-align: center;color:#fff;font-family: "微软雅黑";}
 html,body{height:100%;width:100%;}
 .main{height:100%;width:100%;background:rgb(0,0,0);display:table;}
-.text{opacity:0;font-size: 3.5em;display:table-cell;vertical-align: middle;}
+.text{opacity:1;font-size: 3.5em;display:table-cell;vertical-align: middle;}
 .desc{font-size:1.7em;position:absolute;width:100%;left:0;bottom:1.5em;}
 .layout{position:fixed;height:100%;width:100%;top:0;}
 
