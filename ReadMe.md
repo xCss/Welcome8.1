@@ -16,7 +16,6 @@
 -----------------------------------------
 [![views](https://sourcegraph.com/api/repos/github.com/Niineo/WelcomeToWindows8.1/.counters/views.svg)](https://sourcegraph.com/github.com/Niineo/WelcomeToWindows8.1)
 [![stars]][stars]
-[![home-page]][home-page]
 [![support]][support]
 
 
