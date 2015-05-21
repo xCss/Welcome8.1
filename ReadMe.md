@@ -20,7 +20,6 @@
 
 
 [stars]: https://img.shields.io/github/stars/Niineo/WelcomeToWindows8.1.svg?style=flat
-[home-page]: http://ioliu.cn
 [support]: https://img.shields.io/badge/support-IE8%2B-brightgreen.svg
 
 
