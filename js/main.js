@@ -1,4 +1,4 @@
-var TIPS = ['你好','我们正在为你进行相关设置',['正在获取关键更新','请不要关闭电脑'],['这可能需要一点时间','请不要关闭电脑'],'马上回来','更新完成','现在，我们将设置你的应用',['你可以从应用商店获取应用','正在安装应用'],['正在处理一些事情','正在安装应用'],['正在准备你的应用','请不要关闭电脑'],['准备工作马上就绪','请不要关闭电脑'],['尽情使用吧','Author:@Niineo<br/>项目地址:https://github.com/niineo/WelcomeToWindows8.1']],
+var TIPS = ['你好','我们正在为你进行相关设置',['正在获取关键更新','请不要关闭电脑'],['这可能需要一点时间','请不要关闭电脑'],'马上回来','更新完成','现在，我们将设置你的应用',['你可以从应用商店获取应用','正在安装应用'],['正在处理一些事情','正在安装应用'],['正在准备你的应用','请不要关闭电脑'],['准备工作马上就绪','请不要关闭电脑'],['尽情使用吧','@Niineo<br/>项目地址:https://github.com/niineo/WelcomeToWindows8.1']],
     isTrue = true,
     i = 0,
     timer = null;
@@ -57,6 +57,7 @@ function alpha(target,text,fade,consume,delay,callback){
                 var form = document.createElement('form');
                 form.action = "https://github.com/niineo/WelcomeToWindows8.1";
                 form.method = "get";
+                form.target = "_blank";
                 form.submit();
             });
         }

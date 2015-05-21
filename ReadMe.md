@@ -7,9 +7,6 @@
 #小提示
 > 听说 下雨天 `F11` 和电脑更配噢 ︿(￣︶￣)︿ 
 
-#预览图
-![pic](http://7xilig.com1.z0.glb.clouddn.com/windows8.1.png)
-
 #备注
 > 接受任何形式的贡献，包括不限于问题提交与建议，修复代码 [Issues](https://github.com/ioliu/WelcomeToWindows8.1/issues)
 
