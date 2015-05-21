@@ -11,6 +11,17 @@
 ![pic](http://7xilig.com1.z0.glb.clouddn.com/windows8.1.png)
 
 #备注
-> 如有任何建议或者问题反馈，请提交 [Issues](https://github.com/ioliu/WelcomeToWindows8.1/issues)
+> 接受任何形式的贡献，包括不限于问题提交与建议，修复代码 [Issues](https://github.com/ioliu/WelcomeToWindows8.1/issues)
+
+-----------------------------------------
+[![views](https://sourcegraph.com/api/repos/github.com/Niineo/WelcomeToWindows8.1/.counters/views.svg)](https://sourcegraph.com/github.com/Niineo/WelcomeToWindows8.1)
+[![stars]][stars]
+[![home-page]][home-page]
+[![support]][support]
+
+
+[stars]: https://img.shields.io/github/stars/Niineo/WelcomeToWindows8.1.svg?style=flat
+[home-page]: http://ioliu.cn
+[support]: https://img.shields.io/badge/support-IE8%2B-brightgreen.svg
 
 
