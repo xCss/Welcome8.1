@@ -7,22 +7,14 @@ window.onload = function(){
     var i = 0,
         text = $('.text'),
         rgb = [0,0,0];
-    alpha(text,TIPS[i],true,2000,2500);
+    alpha(text,TIPS[i],true,2000,2000);
     setTimeout(function(){
         timer = setInterval(function(){
             rgb = color(rgb);
             $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
         },20);
     },17500);
-
-
-    
 }
-
-
-
-
-
 /**
  * [$ 获取目标元素]
  * @param  {[element]} selector [description]
