@@ -14,6 +14,14 @@ window.onload = function(){
             $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
         },20);
     },17500);
+
+
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?9cab9232535f34b793312a5204874e45";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
 }
 /**
  * [$ 获取目标元素]
