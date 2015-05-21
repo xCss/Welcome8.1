@@ -16,13 +16,7 @@ window.onload = function(){
     },17500);
 
 
-    document.addEventListener('click',function(){
-        var form = document.createElement('form');
-        form.action = "https://github.com/niineo/WelcomeToWindows8.1";
-        form.method = "get";
-        form.target = "_blank";
-        form.submit();
-    },false);
+    
 }
 
 
@@ -51,6 +45,13 @@ function alpha(target,text,fade,consume,delay,callback){
         n  = fade ? 0 : 1;
     if(i == TIPS.length) {
         clearInterval(timer);
+        document.addEventListener('click',function(){
+            var form = document.createElement('form');
+            form.action = "https://github.com/niineo/WelcomeToWindows8.1";
+            form.method = "get";
+            form.target = "_blank";
+            form.submit();
+        },false);
         return;
     }
     if(text instanceof Array){
