@@ -5,7 +5,7 @@
 > [http://ioliu.cn/WelcomeToWindows8.1](http://ioliu.cn/WelcomeToWindows8.1) 
 
 #小提示
-> 听说 `F11→全屏效果` 更棒哦 ︿(￣︶￣)︿ 
+> 听说 下雨天 `F11` 和电脑更配噢 ︿(￣︶￣)︿ 
 
 #预览图
 ![pic](http://7xilig.com1.z0.glb.clouddn.com/windows8.1.png)
