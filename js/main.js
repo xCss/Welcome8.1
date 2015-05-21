@@ -4,8 +4,7 @@ var TIPS = ['你好','我们正在为你进行相关设置',['正在获取关键
     timer = null;
 
 window.onload = function(){
-    var i = 0,
-        text = $('.text'),
+    var text = $('.text'),
         rgb = [0,0,0];
     alpha(text,TIPS[i],true,2000,2000);
     setTimeout(function(){
@@ -45,13 +44,23 @@ function alpha(target,text,fade,consume,delay,callback){
         n  = fade ? 0 : 1;
     if(i == TIPS.length) {
         clearInterval(timer);
-        document.addEventListener('click',function(){
-            var form = document.createElement('form');
-            form.action = "https://github.com/niineo/WelcomeToWindows8.1";
-            form.method = "get";
-            form.target = "_blank";
-            form.submit();
-        },false);
+        if(document.addEventListener){
+            document.addEventListener('click',function(){
+                var form = document.createElement('form');
+                form.action = "https://github.com/niineo/WelcomeToWindows8.1";
+                form.method = "get";
+                form.target = "_blank";
+                form.submit();
+            });
+        }else if (document.attachEvent){
+            document.attachEvent('onclick',function(){
+                var form = document.createElement('form');
+                form.action = "https://github.com/niineo/WelcomeToWindows8.1";
+                form.method = "get";
+                form.target = "_blank";
+                form.submit();
+            });
+        }
         return;
     }
     if(text instanceof Array){
