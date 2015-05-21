@@ -10,3 +10,7 @@
 #预览图
 ![pic](http://7xilig.com1.z0.glb.clouddn.com/windows8.1.png)
 
+#备注
+> 如有任何建议或者问题反馈，请提交 [Issues](https://github.com/ioliu/WelcomeToWindows8.1/issues)
+
+
