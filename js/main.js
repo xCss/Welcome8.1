@@ -1,23 +1,31 @@
-var TIPS = ['你好','我们正在为你进行相关设置',['正在获取关键更新','请不要关闭电脑'],['这可能需要一点时间','请不要关闭电脑'],'马上回来','更新完成','现在，我们将设置你的应用',['你可以从应用商店获取新应用','正在安装应用'],['正在处理一些事情','正在安装应用'],['正在准备你的应用','请不要关闭电脑'],['准备工作马上就绪','请不要关闭电脑'],['尽情使用吧','']]; 
-
+var TIPS = ['你好','我们正在为你进行相关设置',['正在获取关键更新','请不要关闭电脑'],['这可能需要一点时间','请不要关闭电脑'],'马上回来','更新完成','现在，我们将设置你的应用',['你可以从应用商店获取新应用','正在安装应用'],['正在处理一些事情','正在安装应用'],['正在准备你的应用','请不要关闭电脑'],['准备工作马上就绪','请不要关闭电脑'],['尽情使用吧','Author:@Niineo<br/>项目地址:https://github.com/niineo/WelcomeToWindows8.1']],
+    isTrue = true,
+    i = 0,
+    timer = null;
 
 window.onload = function(){
     var i = 0,
         text = $('.text'),
         rgb = [0,0,0];
-    alpha(text,TIPS[i],true,2000,function(){
-        setTimeout(function(){
-            alpha(text,TIPS[i],false,2000,function(){
-                alpha(text,TIPS[++i],true,2000,function(){
-                    setInterval(function(){
-                        rgb = color(rgb);
-                        $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
-                    },20);
-                });
-            });
-        },1000);
-    });
+    alpha(text,TIPS[i],true,2000,2500);
+    setTimeout(function(){
+        timer = setInterval(function(){
+            rgb = color(rgb);
+            $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
+        },20);
+    },17500);
+
+
+    document.addEventListener('click',function(){
+        var form = document.createElement('form');
+        form.action = "https://github.com/niineo/WelcomeToWindows8.1";
+        form.method = "get";
+        form.target = "_blank";
+        form.submit();
+    },false);
 }
+
+
 
 
 
@@ -34,30 +42,46 @@ function $(selector){
  * @param  {[element]}  target  [目标元素]
  * @param  {[Text]}     text    [显示文本]
  * @param  {[boolean]}  fade    [渐显/渐隐:true/false]
- * @param  {[Number]}   times   [耗时(ms)]
+ * @param  {[Number]}   consume [耗时(ms)]
+ * @param  {[Number]}   delay   [延时进行下一步(ms)]
  * @return {[null]}             []
  */
-function alpha(target,text,fade,times,callback){
+function alpha(target,text,fade,consume,delay,callback){
     var ie = (window.ActiveXObject) ? true : false,
         n  = fade ? 0 : 1;
-    target.innerHTML = text;
+    if(i == TIPS.length) {
+        clearInterval(timer);
+        return;
+    }
+    if(text instanceof Array){
+        target.innerHTML = text[0];
+        $('.desc').innerHTML = text[1];
+    }else target.innerHTML = text;
     var time = setInterval(function(){
         if(fade){
             n += 0.01;
             ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
             if(n >= 1){
                 clearInterval(time);
-                callback && callback();
+                //callback && callback();
+                isTrue = false;
+                setTimeout(function(){
+                    alpha(target,TIPS[i++],isTrue,consume,delay,callback);
+                },delay);
             }
         }else {
             n -= 0.01;
             ie && (target.style.filter='Alpha(opacity:'+ n*100 +')') || (target.style.opacity = n);
             if(n <= 0) {
                 clearInterval(time);
-                callback && callback();
+                //callback && callback();
+                isTrue = true;
+                setTimeout(function(){
+                    alpha(target,TIPS[i],isTrue,consume,delay,callback);
+                },delay);
             }
         }
-    },times/100);
+    },consume/100);
 }    
 
 

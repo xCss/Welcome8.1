@@ -9,6 +9,7 @@ html,body{height:100%;width:100%;}
 .main{height:100%;width:100%;background:rgb(0,0,0);display:table;}
 .text{opacity:0;font-size: 3.5em;display:table-cell;vertical-align: middle;}
 .desc{font-size:1.7em;position:absolute;width:100%;left:0;bottom:1.5em;}
+.desc a{font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-decoration: none;color:#fff;}
 .layout{position:fixed;height:100%;width:100%;top:0;}
 
 @media only screen and (max-width:780px){
