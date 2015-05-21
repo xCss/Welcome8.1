@@ -1,5 +1,5 @@
 #简介
-> 心血来潮，写的一个练手项目
+> Windows8.1 安装完成第一次进入系统时的欢迎界面，纯手工打造
 
 #预览地址
 > [http://ioliu.cn/WelcomeToWindows8.1](http://ioliu.cn/WelcomeToWindows8.1) 
