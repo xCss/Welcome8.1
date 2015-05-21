@@ -57,7 +57,6 @@ function alpha(target,text,fade,consume,delay,callback){
                 var form = document.createElement('form');
                 form.action = "https://github.com/niineo/WelcomeToWindows8.1";
                 form.method = "get";
-                form.target = "_blank";
                 form.submit();
             });
         }
@@ -66,7 +65,10 @@ function alpha(target,text,fade,consume,delay,callback){
     if(text instanceof Array){
         target.innerHTML = text[0];
         $('.desc').innerHTML = text[1];
-    }else target.innerHTML = text;
+    }else {
+        target.innerHTML = text;
+        $('.desc').innerHTML = '';
+    }
     var time = setInterval(function(){
         if(fade){
             n += 0.01;
