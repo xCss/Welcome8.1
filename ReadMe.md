@@ -1,4 +1,4 @@
-[![views](https://sourcegraph.com/api/repos/github.com/Niineo/WelcomeToWindows8.1/.counters/views.svg)](https://sourcegraph.com/github.com/Niineo/WelcomeToWindows8.1) [![stars]][stars] [![support]][support]
+[![views](https://sourcegraph.com/api/repos/github.com/Niineo/WelcomeToWindows8.1/.counters/views.svg)](https://sourcegraph.com/github.com/Niineo/WelcomeToWindows8.1) [![support]][support] [![stars]][stars] 
 -----------------------------------------
 #简介
 > Windows8.1 安装完成第一次进入系统时的欢迎界面，纯手工打造
@@ -17,6 +17,6 @@
 
 
 [stars]: https://img.shields.io/github/stars/Niineo/WelcomeToWindows8.1.svg?style=flat
-[support]: https://img.shields.io/badge/support-IE8%2B-brightgreen.svg
+[support]: https://img.shields.io/badge/support-8%2B-blue.svg
 
 
