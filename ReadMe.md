@@ -1,3 +1,7 @@
+[![views](https://sourcegraph.com/api/repos/github.com/Niineo/WelcomeToWindows8.1/.counters/views.svg)](https://sourcegraph.com/github.com/Niineo/WelcomeToWindows8.1)
+[![stars]][stars]
+[![support]][support]
+-----------------------------------------
 #简介
 > Windows8.1 安装完成第一次进入系统时的欢迎界面，纯手工打造
 
@@ -8,12 +12,10 @@
 > 听说 下雨天 `F11` 和电脑更配噢 ︿(￣︶￣)︿ 
 
 #备注
-> 接受任何形式的贡献，包括不限于问题提交与建议，修复代码 [Issues](https://github.com/ioliu/WelcomeToWindows8.1/issues)
+> 接受任何形式的贡献，包括不限于问题提交与建议，代码修复 
 
------------------------------------------
-[![views](https://sourcegraph.com/api/repos/github.com/Niineo/WelcomeToWindows8.1/.counters/views.svg)](https://sourcegraph.com/github.com/Niineo/WelcomeToWindows8.1)
-[![stars]][stars]
-[![support]][support]
+点击这里→_→[Issues](https://github.com/ioliu/WelcomeToWindows8.1/issues)
+
 
 
 [stars]: https://img.shields.io/github/stars/Niineo/WelcomeToWindows8.1.svg?style=flat
