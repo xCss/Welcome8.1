@@ -6,7 +6,7 @@ var TIPS = ['你好','我们正在为你进行相关设置',['正在获取关键
 window.onload = function(){
     var text = $('.text'),
         rgb = [0,0,0];
-    alpha(text,TIPS[i],true,2000,2000);
+    alpha(text,TIPS[i],true,2000,1800);
     setTimeout(function(){
         timer = setInterval(function(){
             rgb = color(rgb);
