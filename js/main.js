@@ -14,7 +14,6 @@ window.onload = function(){
         },20);
     },17500);
 
-
     (function() {
         var hm = document.createElement("script");
         hm.src = "//hm.baidu.com/hm.js?9cab9232535f34b793312a5204874e45";
