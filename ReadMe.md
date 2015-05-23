@@ -1,7 +1,7 @@
 [![views](https://sourcegraph.com/api/repos/github.com/Niineo/WelcomeToWindows8.1/.counters/views.svg)](https://sourcegraph.com/github.com/Niineo/WelcomeToWindows8.1) [![support]][support] [![stars]][stars] 
 -----------------------------------------
 #简介
-> Windows8.1 安装完成第一次进入系统时的欢迎界面，纯手工打造
+> Windows8.1 安装完成第一次进入系统时的欢迎界面，纯手工打造，欢迎吐槽:smiley:
 
 #预览地址
 > [http://ioliu.cn/WelcomeToWindows8.1](http://ioliu.cn/WelcomeToWindows8.1) 
