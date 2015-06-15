@@ -6,7 +6,6 @@
 #预览地址
 > [http://ioliu.cn/WelcomeToWindows8.1](http://ioliu.cn/WelcomeToWindows8.1)  
 
-## [http://niineo.github.io/WelcomeToWindows8.1](http:/niineo.github.io/WelcomeToWindows8.1)  
 
 #小提示
 > 听说 下雨天 `F11` 和电脑更配噢 ︿(￣︶￣)︿ 
