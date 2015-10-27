@@ -11,7 +11,7 @@ window.onload = function(){
         timer = setInterval(function(){
             rgb = color(rgb);
             $('.main').style.backgroundColor = "rgb("+rgb.join(',')+")";
-        },20);
+        },1000/60);
     },17500);
 
     (function() {
