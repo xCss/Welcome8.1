@@ -4,7 +4,7 @@
 > Windows8.1 安装完成第一次进入系统时的欢迎界面，纯手工打造，欢迎吐槽:smiley:
 
 #预览地址
-> [https://ioliu.cn/WelcomeToWindows8.1](https://ioliu.cn/WelcomeToWindows8.1)  
+> [http://eary.github.io/WelcomeToWindows8.1](http://eary.github.io/WelcomeToWindows8.1)  
 
 
 #小提示
