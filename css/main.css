@@ -1,25 +1,77 @@
 @charset "utf-8";
+
 /**
- * @Author :Niineo;
- * @Github :https://github.com/niineo;
+ * @Author :xCss;
+ * @Github :https://github.com/xCss;
  * @Version:0.1.0;
  */
-*{margin:0 auto;padding:0;text-align: center;color:#fff;font-family: "微软雅黑";}
-html,body{height:100%;width:100%;}
-.main{height:100%;width:100%;background:rgb(0,0,0);display:table;}
-.text{opacity:0;font-size: 3.5em;display:table-cell;vertical-align: middle;}
-.desc{font-size:1.7em;position:absolute;width:100%;left:0;bottom:1.5em;}
-.layout{position:fixed;height:100%;width:100%;top:0;}
 
-@media only screen and (max-width:780px){
-    .text{font-size:3.5em;}
-    .desc{font-size: 1.8em;}
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-family: "微软雅黑";
 }
-@media only screen and (max-width:779px){
-    .text{font-size:2.5em;}
-    .desc{font-size: 1.2em;}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
 }
-@media only screen and (max-width:480px){
-    .text{font-size:1.8em;}
-    .desc{font-size:1em;}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: table;
+}
+
+.text {
+    opacity: 0;
+    font-size: 3.5em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.desc {
+    font-size: 1.7em;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 1.5em;
+}
+
+.layout {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+@media only screen and (max-width:780px) {
+    .text {
+        font-size: 3.5em;
+    }
+    .desc {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width:779px) {
+    .text {
+        font-size: 2.5em;
+    }
+    .desc {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .text {
+        font-size: 1.8em;
+    }
+    .desc {
+        font-size: 1em;
+    }
 }
